@@ -2,9 +2,9 @@
 <plugin id="cordova_plugin_chainway_scanner_id" version="1.0.0"
   xmlns="http://apache.org/cordova/ns/plugins/1.0"
   xmlns:android="http://schemas.android.com/apk/res/android">
-  <name>cordova-plugin-chainway-scanner</name>
-  <js-module name="cordova-plugin-chainway-scanner" src="www/cordova-plugin-chainway-scanner.js">
-    <clobbers target="cordova.plugins.cordova-plugin-chainway-scanner" />
+  <name>ChainwayScan</name>
+  <js-module name="ChainwayScan" src="www/cordova-plugin-chainway-scanner.js">
+    <clobbers target="cordova.plugins.ChainwayScan" />
   </js-module>
   <platform name="android">
     <config-file parent="/*" target="res/xml/config.xml">
