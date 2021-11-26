@@ -1,2 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova_plugin_chainway_scanner_id" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"><name>cordova-plugin-chainway-scanner</name><js-module name="cordova-plugin-chainway-scanner" src="www/cordova-plugin-chainway-scanner.js"><clobbers target="cordova.plugins.cordova-plugin-chainway-scanner" /></js-module><platform name="android"><config-file parent="/*" target="res/xml/config.xml"><feature name="cordova-plugin-chainway-scanner"><param name="android-package" value="cordova_plugin_chainway_scanner_id.cordova-plugin-chainway-scanner" /></feature></config-file><config-file parent="/*" target="AndroidManifest.xml"></config-file><source-file src="src/android/cordova-plugin-chainway-scanner.java" target-dir="src/cordova_plugin_chainway_scanner_id/cordova-plugin-chainway-scanner" /></platform></plugin>
+<plugin id="cordova_plugin_chainway_scanner" version="1.0.0"
+  xmlns="http://apache.org/cordova/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>cordova-plugin-chainway-scanner</name>
+  <js-module name="cordova-plugin-chainway-scanner" src="www/cordova-plugin-chainway-scanner.js">
+    <clobbers target="cordova.plugins.cordova-plugin-chainway-scanner" />
+  </js-module>
+  <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="cordova-plugin-chainway-scanner">
+        <param name="android-package" value="cordova_plugin_chainway_scanner.cordova-plugin-chainway-scanner" />
+      </feature>
+    </config-file>
+    <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+    <source-file src="src/android/ChainwayScannerPlugin.java" target-dir="src/cordova_plugin_chainway_scanner/cordova-plugin-chainway-scanner" />
+  </platform>
+</plugin>
