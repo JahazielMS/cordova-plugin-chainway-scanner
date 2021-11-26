@@ -5,7 +5,16 @@ var chainwayScan = {
     return execute(null, null, 'ChainwayScannerPlugin', 'coolMethod', [])
   },
   start: function() {
-    return execute(null, null, 'ChainwayScannerPlugin', 'start', [])
+    return execute(null, null, 'ChainwayScannerPlugin', 'startScan', [])
+  },
+  stop: function() {
+    return execute(null, null, 'ChainwayScannerPlugin', 'stopScan', [])
+  },
+  open: function() {
+    return execute(null, null, 'ChainwayScannerPlugin', 'open', [])
+  },
+  close: function() {
+    return execute(null, null, 'ChainwayScannerPlugin', 'close', [])
   }
 }
 
