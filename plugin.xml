@@ -9,7 +9,7 @@
   <platform name="android">
     <config-file parent="/*" target="res/xml/config.xml">
       <feature name="ChainwayScannerPlugin">
-        <param name="android-package" value="cordova_plugin_chainway_scanner_id.cordova-plugin-chainway-scanner" />
+        <param name="android-package" value="com.plugin.scan.ChainwayScannerPlugin" />
       </feature>
     </config-file>
     <framework src="src/android/build.gradle" custom="true" type="gradleReference" />
