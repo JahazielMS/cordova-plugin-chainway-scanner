@@ -1,0 +1,21 @@
+{
+  "name": "cordova-plugin-chainway-scanner",
+  "version": "1.0.0",
+  "cordova": {
+    "id": "cordova_plugin_chainway_scanner",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JahazielMS/cordova-plugin-chainway-scanner.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
