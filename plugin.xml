@@ -16,5 +16,7 @@
     <resource-file src="libs/device_api.aar" target="libs/device_api.aar" />
     <config-file parent="/*" target="AndroidManifest.xml"></config-file>
     <source-file src="src/android/ChainwayScannerPlugin.java" target-dir="src/cordova_plugin_chainway_scanner_id/cordova-plugin-chainway-scanner" />
+    <source-file src="src/android/Barcode2D.java" target-dir="src/cordova_plugin_chainway_scanner_id/cordova-plugin-chainway-scanner" />
+    <source-file src="src/android/IBarcodeResult.java" target-dir="src/cordova_plugin_chainway_scanner_id/cordova-plugin-chainway-scanner" />
   </platform>
 </plugin>
