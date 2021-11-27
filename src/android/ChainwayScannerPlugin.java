@@ -3,11 +3,13 @@ package cordova_plugin_chainway_scanner_id;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
 
-import android.content.Broadcast.Receiver;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.util.Log;
+import android.os.AsyncTask;
+import android.app.ProgressDialog;
 
 import com.rscja.barcode.BarcodeUtility;
 
