@@ -2,7 +2,7 @@
   "name": "cordova-plugin-chainway-scanner",
   "version": "1.0.0",
   "cordova": {
-    "id": "cordova_plugin_chainway_scanner_id",
+    "id": "cordova-plugin-chainway-scanner",
     "platforms": [
       "android"
     ]
