@@ -1,4 +1,4 @@
-package cordova_plugin_chainway_scanner_id;
+package com.infra.entregas;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -9,7 +9,7 @@ import android.util.Log;
 import com.rscja.barcode.BarcodeUtility;
 
 public class Barcode2D {
-    private String TAG = "ChainwayScan";
+    private String TAG = "Scanner_barcodeTest";
     private BarcodeUtility barcodeUtility = null;
     private BarcodeDataReceiver barcodeDataReceiver = null;
     private IBarcodeResult iBarcodeResult = null;
@@ -22,15 +22,15 @@ public class Barcode2D {
 
     public void startScan(Context context) {
         if (barcodeUtility != null) {
-          Log.i(TAG, "ScaBarcode");
-          barcodeUtility.startScan(context, BarcodeUtility.ModuleType.BARCODE_2D);
+            Log.i(TAG, "ScanBarcode");
+            barcodeUtility.startScan(context, BarcodeUtility.ModuleType.BARCODE_2D);
         }
     }
 
     public void stopScan(Context context) {
         if (barcodeUtility != null) {
-          Log.i(TAG, "stopScan");
-          barcodeUtility.stopScan(context, BarcodeUtility.ModuleType.BARCODE_2D);
+            Log.i(TAG, "stopScan");
+            barcodeUtility.stopScan(context, BarcodeUtility.ModuleType.BARCODE_2D);
         }
     }
 
@@ -43,7 +43,7 @@ public class Barcode2D {
             barcodeUtility.setReleaseScan(context, false);
             barcodeUtility.setScanFailureBroadcast(context, true);
             barcodeUtility.enableContinuousScan(context, false);
-            // barcodeUtility.enablePlayFailureSound(context, false);
+            barcodeUtility.enablePlayFailureSound(context, false);
             barcodeUtility.enableEnter(context, false);
             barcodeUtility.setBarcodeEncodingFormat(context, 1);
 
@@ -78,7 +78,6 @@ public class Barcode2D {
                 if (barCode == null) {
                     barCode = "Scan fail";
                 }
-
                 if (iBarcodeResult != null)
                     iBarcodeResult.getBarcode(barCode);
             }
